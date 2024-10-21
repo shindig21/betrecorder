@@ -1,0 +1,12 @@
+# Context Files
+llm_context.txt
+context_for_llm.txt
+
+# SSL Certificates
+betfair_certs/*.key
+betfair_certs/*.pem
+betfair_certs/*.crt
+betfair_certs/*.csr
+
+# Environment Variables
+.env

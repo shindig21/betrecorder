@@ -1,0 +1,52 @@
+# config.yaml
+
+
+#### COLLECTCTX CONFIGURATION ####
+
+# run collectctx in the project directory to generate the context file
+# /usr/local/bin/collectctx
+
+included_directories:
+  - "."  # Current directory
+  - "scripts"
+  - "market_logs"
+  # Add other directories relative to the project root as needed
+  # - "src"
+  # - "config"
+
+file_extensions:
+  - ".py"
+  - ".json"
+  - ".md"
+  - ".env"
+  #- ".log"
+  - ".yaml"
+
+exclude_files:
+- "context_for_llm.txt"    # Exclude the output file
+- "collect_context.py"     # Exclude the script itself
+- "markets_log.json"
+- "tick_data.json"
+- "*.sh"                   # Example pattern to exclude shell scripts
+# Add more exclusions as needed
+
+llm_instructions:
+  - "Always provide the full file content when suggesting code modifications."
+  - "Ensure that all changes maintain existing coding standards and conventions."
+  - "When terminal command(s) are warranted, for troubleshooting or updating settings, give the full command(s) so the user just has to copy and paste.  Update the betfair_api.log if possible at the same time"
+  - "Logging and error handling is very important.  Be thorough."
+  - "When providing new code, always give the command to test the code afterwards"
+  - "for python/java etc, I will always edit in VS Code, never nano"
+  - "the virtual environment is automatically entered into when i traverse to the betrecorder directory"
+  - "implement your further recommendations don't expect me to"
+  - "if there are no changes to a file don't give me the code for the file"
+  - "betfairlightweight is from https://github.com/betcode-org, and the Author is listed as Liam Pauling. This is the official version.  There is no other version available now."
+
+  # Add more instructions as needed
+
+
+influxdb:
+  url: "http://localhost:8086"
+  token: "NWz0VK_nwuevr6uBmFKgbDEV4cAd91KxSJrTj1Ig-pwBirBHrVaHP2AoErW5_fH4lYUXa3c5ajHOQJsbAAyILQ=="
+  org: "myorg"
+  bucket: "mybucket"

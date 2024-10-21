@@ -1,0 +1,60 @@
+2024-10-21 09:51:25,689 - INFO - Hardware information gathered successfully.
+2024-10-21 09:51:25,695 - ERROR - Error gathering disk usage info: Command 'df -h | grep '^/dev/' | grep -v '/$'' returned non-zero exit status 1.
+2024-10-21 09:51:25,712 - WARNING - Docker daemon may not be running or Docker is not installed: Command 'docker version -f '{{.Server.Version}}'' returned non-zero exit status 1.
+2024-10-21 09:51:25,807 - INFO - Installed Python packages gathered successfully.
+2024-10-21 09:51:25,815 - INFO - Discovered 1 virtual environment(s).
+2024-10-21 09:51:25,818 - INFO - Configuration loaded from /home/nick/projects/betrecorder/config.yaml.
+2024-10-21 09:51:25,818 - INFO - Included directories: ['.', 'scripts', 'market_logs']
+2024-10-21 09:51:25,818 - INFO - File extensions to include: ['.py', '.json', '.md', '.env', '.yaml']
+2024-10-21 09:51:25,819 - INFO - Files to exclude: ['context_for_llm.txt', 'collect_context.py', 'markets_log.json', 'tick_data.json', '*.sh']
+2024-10-21 09:51:25,819 - INFO - Collecting files from /home/nick/projects/betrecorder...
+2024-10-21 09:51:25,819 - DEBUG - Excluded file: markets_log.json
+2024-10-21 09:51:25,819 - DEBUG - Excluded file: tick_data.json
+2024-10-21 09:51:25,819 - DEBUG - Excluded file: collect_context.py
+2024-10-21 09:51:25,819 - INFO - Collected 15 file(s) from included directories.
+2024-10-21 09:51:25,819 - INFO - .env file is already included; skipping duplicate.
+2024-10-21 09:51:25,820 - INFO - Deleted existing output file: /home/nick/projects/betrecorder/llm_context.txt
+2024-10-21 09:51:25,820 - INFO - LLM Instructions written to context file.
+2024-10-21 09:51:25,820 - INFO - System Setup Summary written to context file.
+2024-10-21 09:51:25,820 - DEBUG - Read file: /home/nick/projects/betrecorder/poll_events.py
+2024-10-21 09:51:25,820 - INFO - Collected file: poll_events.py
+2024-10-21 09:51:25,820 - DEBUG - Read file: /home/nick/projects/betrecorder/competitions.json
+2024-10-21 09:51:25,820 - INFO - Collected file: competitions.json
+2024-10-21 09:51:25,820 - DEBUG - Read file: /home/nick/projects/betrecorder/.env
+2024-10-21 09:51:25,820 - INFO - Collected file: .env
+2024-10-21 09:51:25,820 - DEBUG - Read file: /home/nick/projects/betrecorder/record_tick.py
+2024-10-21 09:51:25,820 - INFO - Collected file: record_tick.py
+2024-10-21 09:51:25,820 - DEBUG - Read file: /home/nick/projects/betrecorder/authenticate_betfair.py
+2024-10-21 09:51:25,820 - INFO - Collected file: authenticate_betfair.py
+2024-10-21 09:51:25,820 - DEBUG - Read file: /home/nick/projects/betrecorder/event_types.json
+2024-10-21 09:51:25,820 - INFO - Collected file: event_types.json
+2024-10-21 09:51:25,820 - DEBUG - Read file: /home/nick/projects/betrecorder/betfair_api.py
+2024-10-21 09:51:25,821 - INFO - Collected file: betfair_api.py
+2024-10-21 09:51:25,821 - DEBUG - Read file: /home/nick/projects/betrecorder/test_betfair_racing_polling.py
+2024-10-21 09:51:25,821 - INFO - Collected file: test_betfair_racing_polling.py
+2024-10-21 09:51:25,821 - DEBUG - Read file: /home/nick/projects/betrecorder/config.yaml
+2024-10-21 09:51:25,821 - INFO - Collected file: config.yaml
+2024-10-21 09:51:25,821 - DEBUG - Read file: /home/nick/projects/betrecorder/poll_tick.py
+2024-10-21 09:51:25,821 - INFO - Collected file: poll_tick.py
+2024-10-21 09:51:25,821 - DEBUG - Read file: /home/nick/projects/betrecorder/test_betfair_api.py
+2024-10-21 09:51:25,821 - INFO - Collected file: test_betfair_api.py
+2024-10-21 09:51:25,821 - DEBUG - Read file: /home/nick/projects/betrecorder/market_types.json
+2024-10-21 09:51:25,821 - INFO - Collected file: market_types.json
+2024-10-21 09:51:25,821 - DEBUG - Read file: /home/nick/projects/betrecorder/market_logs/premier_league_today.json
+2024-10-21 09:51:25,821 - INFO - Collected file: market_logs/premier_league_today.json
+2024-10-21 09:51:25,821 - DEBUG - Read file: /home/nick/projects/betrecorder/market_logs/uk_horse_racing_today.json
+2024-10-21 09:51:25,821 - INFO - Collected file: market_logs/uk_horse_racing_today.json
+2024-10-21 09:51:25,821 - DEBUG - Read file: /home/nick/projects/betrecorder/market_logs/mens_tennis_today.json
+2024-10-21 09:51:25,822 - INFO - Collected file: market_logs/mens_tennis_today.json
+2024-10-21 09:51:25,822 - INFO - Active virtual environment: /home/nick/projects/betrecorder/betfair_env
+2024-10-21 09:51:25,822 - INFO - Virtual environment details written to context file.
+2024-10-21 09:51:25,931 - INFO - Obtained pip freeze.
+2024-10-21 09:51:25,931 - INFO - Installed Python packages written to context file.
+2024-10-21 09:51:25,931 - DEBUG - Excluded SSL cert file: client_combined.pem
+2024-10-21 09:51:25,931 - DEBUG - Excluded SSL cert file: client-2048.key
+2024-10-21 09:51:25,931 - DEBUG - Excluded SSL cert file: betfair_csr.csr
+2024-10-21 09:51:25,932 - DEBUG - Excluded SSL cert file: client-2048.crt
+2024-10-21 09:51:25,932 - DEBUG - Excluded SSL cert file: client-2048.csr
+2024-10-21 09:51:25,932 - DEBUG - Excluded SSL cert file: betfair_key.key
+2024-10-21 09:51:25,932 - INFO - Collected 0 SSL certificate(s).
+2024-10-21 09:51:25,932 - INFO - Context collection complete. Output written to /home/nick/projects/betrecorder/llm_context.txt
