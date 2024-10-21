@@ -10,3 +10,5 @@ betfair_certs/*.csr
 
 # Environment Variables
 .env
+betfair_env/
+_pycache_/
